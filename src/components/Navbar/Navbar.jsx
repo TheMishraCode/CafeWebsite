@@ -3,6 +3,7 @@ import Profile from '../../assets/Profile.png';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from 'react-router';
 import { motion, AnimatePresence } from 'motion/react';
+import { FaCartShopping } from "react-icons/fa6";
 // import Sidenavbar from '../Sidenavbar/Sidenavbar';
 
 
@@ -95,6 +96,10 @@ const Navbar = () => {
                             className='text-white text-xl md:hidden' />
                     </NavLink>
                 </div>
+                <NavLink to="/cart">
+                <FaCartShopping className='text-white text-xl hover:text-amber-500 
+                hover:cursor-pointer'/>
+                </NavLink>
             
             {/* mobile sidebar */}
            <AnimatePresence>

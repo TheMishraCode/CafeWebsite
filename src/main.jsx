@@ -8,6 +8,8 @@ import About from './components/About/About.jsx'
 import OurServices from './components/OurServices/ourServices.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import Toplist from './components/Toplist/Toplist.jsx'
+import Cart from './components/Cart/Cart.jsx'
+import { CartProvider } from './CardContext.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,6 +35,10 @@ const router = createBrowserRouter([
     {
       path: 'ourServices',
       element: <OurServices/>
+    },
+    {
+      path:'cart',
+      element: <Cart/>
     }
 
   ]
@@ -41,6 +47,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <CartProvider>  
     <RouterProvider router={router}/>
+    </CartProvider>
   </StrictMode>,
 )

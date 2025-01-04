@@ -1,13 +1,8 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import { Outlet } from 'react-router'
-import Hero from './components/Hero/Hero'
-import Toplist from './components/Toplist/Toplist'
-import Banner from './components/Banner/Banner'
-import OurServices from './components/OurServices/ourServices'
 import BgImg from './assets/bgcafe.jpg'
-import About from './components/About/About'
-import Contact from './components/Contact/Contact'
+
 
 const bg= {
   backgroundImage : `url(${BgImg})`,
